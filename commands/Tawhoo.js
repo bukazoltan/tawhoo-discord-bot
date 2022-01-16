@@ -49,7 +49,7 @@ module.exports = {
         console.log(err);
       } else {
         db.TawhooSession.find({ ongoing: true }).then((data) => {
-          if (data.length) {
+          if (data.length && data[0].cardset != "no_filter") {
             db.TawhooCardSet.find({ _id: data[0].cardSet }).then((d) => {
               let positive = d[0].positive;
               let negative = d[0].negative;
