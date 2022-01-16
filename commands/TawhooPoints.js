@@ -9,7 +9,7 @@ module.exports = {
     db.TawhooSession.find({ ongoing: true }).then((data) => {
       if (data.length === 0) {
         return interaction.reply(
-          "Nincs folymatban lévő session. Egy tawhoo moderátor a /tsession2 paranccsal indíthat egyet."
+          "Nincs folymatban lévő session. Egy tawhoo moderátor a /tsession paranccsal indíthat egyet."
         );
       }
       let session = data[0];
