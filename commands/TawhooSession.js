@@ -176,8 +176,10 @@ module.exports = {
             };
           });
           let orderByScore = function compare(a, b) {
-            if (a.value < b.value) return 1;
-            if (b.value < a.value) return -1;
+            let a_val = parseInt(a.value);
+            let b_val = parseInt(b.value);
+            if (a_val < b_val) return 1;
+            if (b_val < a_val) return -1;
             return 0;
           };
           let sortedScore = scoreObj.sort(orderByScore);
