@@ -138,7 +138,7 @@ module.exports = {
                         )
                         .addField(
                           `A következő paranccsal nézheted meg az állást:`,
-                          "/tpoints2"
+                          "/tpoints"
                         )
                         .addField(
                           `Session ID-ja: ${newTawhoo._id}`,
