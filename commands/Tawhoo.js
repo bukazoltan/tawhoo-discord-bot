@@ -42,7 +42,7 @@ module.exports = {
           console.log(err);
         }
       );
-      i.reply("Elküldtem a feladványt!");
+      i.reply({content: "Elküldtem a feladványt!", ephemeral: true});
     };
     db.Tawhoo.find({}, function (err, result) {
       if (err) {
