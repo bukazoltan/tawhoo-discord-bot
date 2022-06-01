@@ -8,4 +8,4 @@ The project is using a mongodb backend, where the tawhoo cards are stored.
 
 ## Acknowledgments
 
-* [discord.js]([https://github.com/matiassingers/awesome-readme](https://discord.js.org/#/))
+* [discord.js](https://discord.js.org/#/)
